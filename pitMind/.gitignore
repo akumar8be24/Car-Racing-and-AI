@@ -1,0 +1,70 @@
+# Env & secrets
+.env
+.env.local
+.env.ce
+.env.production.local
+.env.development.local
+*.env
+firebase-service-account.json
+*.pem
+scripts/id_rsa_pitmind
+scripts/id_rsa_pitmind.pub
+scratch/
+fix_tests*.py
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+.venv312/
+venv/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+*.py[cod]
+*$py.class
+
+# Node
+node_modules/
+dist/
+build/
+*.log
+.npm
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# FastF1 cache (if generated locally)
+.cache/
+
+# CI/CD artifacts
+*.sarif
+*-report.json
+bandit-report.json
+safety-report.json
+pip-audit-report.json
+npm-audit-report.json
+eslint-security-report.json
+trivy-*.sarif
+outdated.json
+release-artifacts/
+backup-*.yaml
+
+# GitHub Actions
+.github/workflows/*.log
+data/fastf1_cache/
+data/replay/
+
+# Backend virtualenv (accidentally committed)
+backend/.venv_fix/
+
