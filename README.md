@@ -1,6 +1,6 @@
-# PitMind
+# Veritasppen
 
-PitMind is an AI-assisted race strategy and telemetry platform for motorsport
+Veritasppen is an AI-assisted race strategy and telemetry platform for motorsport
 teams, drivers, engineers, and fans. It combines historical Formula 1 session
 replay, real-time WebSocket telemetry, explainable strategy scoring, IBM
 Granite narration, post-race debrief analysis, and role-specific dashboards in
@@ -28,7 +28,7 @@ behind timing screens and commentary shorthand. A pit stop may look arbitrary
 unless the viewer can see the evidence, alternatives, and confidence behind
 the call.
 
-PitMind addresses both needs:
+Veritasppen addresses both needs:
 
 - Engineers receive structured telemetry analysis, strategy scores, evidence,
   assumptions, and an auditable explanation.
@@ -41,7 +41,7 @@ PitMind addresses both needs:
 
 ### IBM AI Integration
 
-PitMind uses IBM Granite through watsonx.ai as an explanation layer on top of a
+Veritasppen uses IBM Granite through watsonx.ai as an explanation layer on top of a
 deterministic strategy engine. The model is not asked to invent the numerical
 strategy calculation. Instead, the backend computes the race recommendation
 first and supplies Granite with structured context:
@@ -65,7 +65,7 @@ chequered flag.
 
 ### Open-Source Technology
 
-PitMind combines IBM services with open-source components:
+Veritasppen combines IBM services with open-source components:
 
 | Layer | Technology | Purpose |
 | --- | --- | --- |
@@ -111,7 +111,7 @@ Replay WebSocket clients can subscribe to:
 
 ## Innovation
 
-PitMind is not only a telemetry dashboard and not only an AI chat interface.
+Veritasppen is not only a telemetry dashboard and not only an AI chat interface.
 Its distinctive value is the connection between replayable race evidence,
 deterministic strategy scoring, and explainable AI narration.
 
@@ -132,7 +132,7 @@ Key ideas:
 
 ## Challenge Fit
 
-PitMind directly addresses a real racing challenge: turning dense telemetry
+Veritasppen directly addresses a real racing challenge: turning dense telemetry
 into a timely, explainable decision.
 
 For teams, it reduces the cognitive load involved in evaluating pit windows,
@@ -182,6 +182,385 @@ flowchart LR
     API --> UI["React application"]
 ```
 
+# Quantum Intelligence Layer (Qiskit)
+
+VeritasPen integrates quantum-inspired optimization concepts and is architected
+for future acceleration through IBM Quantum technologies using Qiskit.
+
+Modern Formula 1 race strategy involves solving highly complex optimization
+problems under strict time constraints. Engineers must continuously evaluate
+thousands of possible race outcomes while balancing tyre degradation, pit-stop
+timing, traffic, weather changes, safety-car probability, fuel usage, and
+track position.
+
+Many of these challenges resemble combinatorial optimization problems that
+become increasingly difficult as the number of variables grows. Quantum
+computing offers a promising approach for exploring these large decision spaces
+more efficiently than traditional brute-force methods.
+
+The deterministic strategy engine remains the primary decision-making
+component of VeritasPen. Qiskit-based modules are designed to enhance strategy
+exploration, scenario generation, and optimization while maintaining complete
+auditability and explainability.
+
+---
+
+## Why Quantum Computing in Motorsport?
+
+A Formula 1 race can be viewed as a real-time optimization problem where teams
+must continuously answer questions such as:
+
+- When is the optimal pit-stop window?
+- Should the team attempt an undercut or overcut?
+- How will traffic affect race pace?
+- What is the probability of a Safety Car in the next stint?
+- Which strategy provides the highest expected finishing position?
+- How should weather uncertainty influence decisions?
+
+As telemetry streams grow larger and simulations become more detailed, the
+number of possible strategy combinations increases exponentially.
+
+Quantum computing provides a pathway for:
+
+- Faster optimization
+- Larger scenario exploration
+- Better uncertainty modelling
+- More efficient resource allocation
+- Enhanced simulation capabilities
+- Future-ready race intelligence systems
+
+---
+
+# Current Quantum Integration
+
+The platform includes a dedicated Quantum Strategy Research Layer powered by
+Qiskit for experimentation, simulation, and optimization studies.
+
+Historical race replays can be transformed into optimization problems and
+evaluated using quantum-inspired algorithms and quantum simulators.
+
+Current research areas include:
+
+- Quantum-enhanced pit strategy optimization
+- Traffic network analysis
+- Safety-car probability modelling
+- Multi-objective race strategy selection
+- Quantum Monte Carlo acceleration
+- Hybrid classical-quantum decision systems
+
+---
+
+# Implemented Quantum Features
+
+## Quantum Strategy Sandbox
+
+The Quantum Strategy Sandbox allows historical race sessions to be converted
+into optimization problems for experimentation.
+
+Inputs include:
+
+- Driver telemetry
+- Tyre degradation data
+- Sector times
+- Track position
+- Weather information
+- Historical pit-stop performance
+
+These variables are transformed into optimization objectives that can be
+evaluated using Qiskit simulators.
+
+### Example Use Cases
+
+- Compare one-stop vs two-stop strategies
+- Evaluate alternate pit windows
+- Analyze undercut opportunities
+- Assess safety-car timing benefits
+
+---
+
+## Quantum Replay Analysis
+
+Historical sessions replayed through FastF1 can be processed through quantum
+optimization experiments.
+
+This enables:
+
+- Retrospective strategy evaluation
+- Alternative race outcome exploration
+- What-if simulations
+- Driver-specific optimization studies
+
+Example:
+
+> "What would have happened if Verstappen pitted 5 laps earlier during the
+> 2023 Monaco Grand Prix?"
+
+The replay engine can generate alternate race states and evaluate strategy
+quality using quantum-inspired optimization techniques.
+
+---
+
+## Hybrid Classical-Quantum Architecture
+
+VeritasPen follows a hybrid architecture where quantum modules complement the
+deterministic strategy engine rather than replacing it.
+
+### Workflow
+
+1. Telemetry is collected and normalized.
+2. Classical strategy scoring is performed.
+3. Optimization candidates are generated.
+4. Qiskit evaluates candidate solutions.
+5. Results are ranked and fused.
+6. IBM Granite explains the recommendation.
+7. Engineers receive an auditable recommendation.
+
+This ensures every recommendation remains explainable and traceable.
+
+---
+
+# Potential Future Quantum Features
+
+## Quantum Pit Window Optimization
+
+### Problem
+
+Determining the optimal pit-stop lap requires balancing:
+
+- Tyre degradation
+- Traffic congestion
+- Undercut opportunities
+- Safety-car probability
+- Weather conditions
+
+The search space grows rapidly throughout a race.
+
+### Proposed Solution
+
+Model pit-window selection as a combinatorial optimization problem and solve
+using:
+
+- QAOA (Quantum Approximate Optimization Algorithm)
+- Quantum Annealing-inspired methods
+- Variational Optimization approaches
+
+### Benefits
+
+- Faster exploration of pit scenarios
+- Improved strategy ranking
+- Better uncertainty handling
+
+---
+
+## Quantum Traffic Graph Optimization
+
+### Problem
+
+Traffic interactions involve dozens of interconnected variables.
+
+Drivers may gain or lose several seconds depending on:
+
+- DRS trains
+- Dirty air
+- Overtake probability
+- Sector performance
+- Relative tyre age
+
+### Proposed Solution
+
+Represent race traffic as a graph optimization problem.
+
+Qiskit graph algorithms can help identify:
+
+- Optimal release positions
+- Clean-air opportunities
+- Low-risk overtaking windows
+
+### Benefits
+
+- Better traffic forecasting
+- Improved pit-stop timing decisions
+- Reduced traffic penalties
+
+---
+
+## Quantum Safety Car Prediction
+
+### Problem
+
+Safety Cars significantly alter race outcomes.
+
+Predicting their impact requires evaluating large numbers of race scenarios.
+
+### Proposed Solution
+
+Use quantum-enhanced probability estimation techniques to evaluate:
+
+- Historical incident patterns
+- Track-specific risks
+- Weather effects
+- Race-control events
+
+### Benefits
+
+- Better safety-car risk assessment
+- More accurate strategy confidence scores
+
+---
+
+## Quantum Monte Carlo Simulation
+
+### Problem
+
+Race engineers often simulate thousands of possible race outcomes.
+
+Classical Monte Carlo methods become computationally expensive as complexity
+increases.
+
+### Proposed Solution
+
+Explore:
+
+- Quantum Amplitude Estimation
+- Quantum Monte Carlo acceleration
+- Probabilistic scenario sampling
+
+### Benefits
+
+- Faster convergence
+- Larger simulation spaces
+- More accurate uncertainty estimation
+
+---
+
+## Quantum Strategy Portfolio Optimization
+
+### Problem
+
+Teams rarely evaluate a single strategy.
+
+Instead, they maintain a portfolio of possible race plans.
+
+Examples:
+
+- One-stop strategy
+- Two-stop strategy
+- Aggressive undercut
+- Defensive overcut
+- Safety-car opportunistic strategy
+
+### Proposed Solution
+
+Use quantum optimization to rank strategy portfolios based on:
+
+- Expected finishing position
+- Risk score
+- Confidence level
+- Traffic impact
+- Tyre wear projections
+
+### Benefits
+
+- Better decision quality
+- Stronger contingency planning
+- Improved race adaptability
+
+---
+
+## Quantum Machine Learning for Telemetry
+
+### Proposed Research Area
+
+Investigate Quantum Machine Learning (QML) techniques for:
+
+- Tyre degradation prediction
+- Driver performance modelling
+- Lap-time forecasting
+- Weather impact analysis
+- Race-state classification
+
+Potential technologies:
+
+- Quantum Support Vector Machines
+- Variational Quantum Classifiers
+- Quantum Neural Networks
+
+---
+
+# IBM Quantum Ecosystem Support
+
+VeritasPen is designed to support future integration with:
+
+- Qiskit
+- IBM Quantum Runtime
+- QAOA
+- Variational Quantum Eigensolver (VQE)
+- Quantum Machine Learning frameworks
+- Hybrid Classical-Quantum Pipelines
+- IBM Quantum Simulators
+- Future IBM Quantum Hardware
+
+---
+
+# Quantum Technology Stack
+
+| Layer | Technology | Purpose |
+|---------|------------|----------|
+| Quantum SDK | Qiskit | Quantum application development |
+| Optimization | QAOA | Strategy optimization |
+| Simulation | Qiskit Aer | Quantum simulation |
+| Runtime | IBM Quantum Runtime | Accelerated execution |
+| ML Research | Qiskit Machine Learning | Telemetry prediction |
+| Hybrid Processing | FastAPI + Qiskit | Classical-quantum orchestration |
+| Explainability | IBM Granite | Human-readable strategy reasoning |
+
+---
+
+# Example Future Architecture
+
+```mermaid
+flowchart LR
+
+    Telemetry["Race Telemetry"] --> Strategy["Deterministic Strategy Engine"]
+
+    Strategy --> Classical["Classical Optimization"]
+
+    Strategy --> Quantum["Qiskit Optimization Layer"]
+
+    Quantum --> QAOA["QAOA"]
+    Quantum --> Runtime["IBM Quantum Runtime"]
+    Quantum --> Aer["Qiskit Aer Simulator"]
+
+    Classical --> Fusion["Strategy Fusion Layer"]
+
+    QAOA --> Fusion
+    Runtime --> Fusion
+    Aer --> Fusion
+
+    Fusion --> Granite["IBM Granite"]
+
+    Granite --> Dashboard["Engineer & Fan Dashboards"]
+
+    Fusion --> Audit["Strategy Audit Store"]
+```
+
+---
+
+# Research Vision
+
+VeritasPen aims to combine four emerging technologies into a single
+motorsport intelligence platform:
+
+1. Real-time telemetry analytics
+2. Explainable artificial intelligence
+3. Historical race simulation
+4. Quantum optimization research
+
+By leveraging Qiskit and the IBM Quantum ecosystem, VeritasPen establishes a
+future-ready architecture capable of exploring advanced race-strategy
+optimization problems while maintaining the transparency, explainability, and
+auditability required in high-performance motorsport environments.
+
 ## Requirements
 
 ### Docker Setup
@@ -208,7 +587,7 @@ Required:
 Copy the root template:
 
 ```bash
-cd pitMind
+cd Veritasppen
 cp .env.example .env
 ```
 
@@ -310,7 +689,7 @@ browser builds do not need Docker-internal hostnames.
 Backend:
 
 ```bash
-cd pitMind/backend
+cd Veritasppen/backend
 python -m venv .venv
 .venv/Scripts/activate
 pip install -r requirements.txt
@@ -320,7 +699,7 @@ python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 Frontend:
 
 ```bash
-cd pitMind/frontend
+cd Veritasppen/frontend
 npm install
 npm run dev -- --host 127.0.0.1 --port 5173
 ```
@@ -337,14 +716,14 @@ VITE_WS_URL=ws://127.0.0.1:8000/api/v1/stream/telemetry
 Launch the integrated interactive session loader:
 
 ```powershell
-cd pitMind
+cd Veritasppen
 .\scripts\run-replay.ps1
 ```
 
 Or run the replay CLI directly:
 
 ```bash
-cd pitMind/backend
+cd Veritasppen/backend
 python -m open_pit_wall
 ```
 
@@ -386,14 +765,14 @@ Example subscription:
 Backend:
 
 ```bash
-cd pitMind/backend
+cd Veritasppen/backend
 python -m pytest tests -q
 ```
 
 Frontend:
 
 ```bash
-cd pitMind/frontend
+cd Veritasppen/frontend
 npm install
 npm test
 ```
