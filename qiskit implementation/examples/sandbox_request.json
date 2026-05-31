@@ -1,0 +1,42 @@
+{
+  "race_id": "2023-monaco-gp",
+  "driver": "VER",
+  "lap": 28,
+  "weather": "dry",
+  "candidates": [
+    {
+      "strategy_id": "baseline-one-stop",
+      "pit_laps": [31],
+      "tyre_plan": ["medium", "hard"],
+      "expected_finish_position": 1,
+      "race_time_delta_seconds": 0.0,
+      "traffic_loss_seconds": 1.4,
+      "tyre_risk": 0.18,
+      "safety_car_upside_seconds": 0.6,
+      "confidence": 0.82
+    },
+    {
+      "strategy_id": "early-undercut",
+      "pit_laps": [26],
+      "tyre_plan": ["medium", "hard"],
+      "expected_finish_position": 1,
+      "race_time_delta_seconds": -1.7,
+      "traffic_loss_seconds": 3.8,
+      "tyre_risk": 0.31,
+      "safety_car_upside_seconds": 0.3,
+      "confidence": 0.71
+    },
+    {
+      "strategy_id": "two-stop-attack",
+      "pit_laps": [24, 48],
+      "tyre_plan": ["medium", "hard", "soft"],
+      "expected_finish_position": 2,
+      "race_time_delta_seconds": 4.1,
+      "traffic_loss_seconds": 2.2,
+      "tyre_risk": 0.14,
+      "safety_car_upside_seconds": 1.7,
+      "confidence": 0.64
+    }
+  ]
+}
+
